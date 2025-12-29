@@ -13,7 +13,7 @@ use App\Http\Controllers\v1\Author\NotificationController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return redirect()->route('admins.signIn');
+    return redirect('/new-admin');
 });
 
 Route::get('signIn', [AuthController::class, 'signIn'])->name('admins.signIn');
