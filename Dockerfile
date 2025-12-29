@@ -16,6 +16,7 @@ RUN set -eux; \
     libzip-dev \
     ; \
     docker-php-ext-install -j"$(nproc)" \
+    bcmath \
     calendar \
     exif \
     intl \
